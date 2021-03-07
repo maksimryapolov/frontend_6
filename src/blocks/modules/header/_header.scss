@@ -1,0 +1,243 @@
+.header {
+    color: $main-color-txt;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top,
+    &__bottom {
+        font-size: rem(14);
+    }
+
+    &__top {
+        display: flex;
+        border-bottom: 1px solid #ececec;
+    }
+
+    &__menu {
+        padding: $base*4 $base*17 $base*4 0;
+        border-right: 1px solid #ececec;
+
+        @media (max-width: $breakpoint-lg-max) {
+            flex-basis: 50%;
+        }
+
+        @media (max-width: $breakpoint-xs-max) {
+            flex-basis: 30%;
+        }
+        
+    }
+
+    &__client {
+        padding: $base*4 0 $base*4 $base * 7;
+        
+        @media (max-width: $breakpoint-lg-max) {
+            flex-basis: 50%;
+        }
+
+        @media (max-width: $breakpoint-xs-max) {
+            flex-basis: 70%;
+        }
+    }
+
+    &__bottom {
+        padding: $base*4 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// === MENU ===
+.menu {
+    &__items {
+        display: flex;
+
+        @media (max-width: $breakpoint-lg-max) {
+            display: none;   
+        }
+    }
+
+    &__item {
+
+        & + & {
+            margin-left: $base * 7;
+        }
+    }
+}
+// === / MENU ===
+
+// === client ===
+.client {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: $base * 4;
+        height: $base * 4;
+        margin-right: $base;
+    }
+}
+// === / client ===
+
+// === logo ===
+.logo {
+    &__item {
+        width: $base * 52;
+        margin: 0 auto;
+
+        img {
+            @include img;
+        }
+    }
+
+    &__text {
+        font-size: rem(10);
+    }
+}
+// === / logo ===
+
+// === contacts ===
+.contacts {
+    display: flex;
+
+    &__item-block {
+        & + & {
+            margin-left: $base * 12;
+
+            @media (max-width: $breakpoint-md-max) {
+                margin-left: 0;
+                margin-top: $base * 3;
+            }
+        }
+    }
+
+    &__phones {
+        font-size: rem(20);
+    }
+
+    &__icons {
+        display: none;
+
+        @media (max-width: $breakpoint-sm-max) and (min-width: $breakpoint-sm-min) {
+            display: block;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    &__info,
+    &__phones {
+        @media (max-width: $breakpoint-sm-max) {
+            display: none;
+        }
+    }
+
+    &__number,
+    &__info-item {
+        & + & {
+            margin-top: $base * 4;
+
+            @media (max-width: $breakpoint-md-max) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__info-item {
+        display: flex;
+    }
+
+    &__info-icon {
+        margin-right: $base;
+    }
+
+    @media (max-width: $breakpoint-md-max) {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+// === / contacts ===
+
+// === cart-line ===
+.cart-line {
+    display: flex;
+    
+    &__block {
+        display: flex;
+        align-items: center;
+
+        & + & {
+            margin-left: $base * 6;
+        }
+
+        &_favorite {
+            @media (max-width: $breakpoint-xs-max) {
+                display: none;
+            }
+        }
+    }
+
+    &__icon-favorite {
+        font-size: rem(12);
+    }
+
+    &__icon {
+        margin-right: $base * 3;
+    }
+
+    &__sum {
+        margin-right: $base;
+        font-size: rem(16);
+    }
+}
+// === / cart-line ===
+
+// === catalog-nav ===
+.catalog-nav {
+    color: $white;
+    background: linear-gradient(115deg, #38bf5e 0%, #13dd33 100%);
+    font-size: rem(18);
+
+    &__items {
+        display: flex;
+
+        @media (max-width: $breakpoint-md-max) {
+            justify-content: center;
+            font-size: rem(12);
+            white-space: nowrap;
+        }
+    }
+
+    &__item {
+        padding: $base*3 $base*6;
+        text-transform: uppercase;
+
+        & + & {
+            border-left: 1px solid #5fd472;
+        }
+    }
+
+    &__link {
+        color: $white;
+    }
+
+    @media (max-width: $breakpoint-sm-max) {
+        display: none;
+    }
+}
+// === / catalog-nav ===

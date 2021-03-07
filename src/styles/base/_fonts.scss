@@ -1,0 +1,18 @@
+/*
+100 - Thin (Hairline)
+200 - Extra Light (Ultra Light)
+300 - Light
+400 - Normal
+500 - Medium
+600 - Semi Bold (Demi Bold)
+700 - Bold
+800 - Extra Bold (Ultra Bold)
+900 - Black (Heavy)
+*/
+
+@include font-face('Rubik', '../fonts/Rubik-Light', 300);
+@include font-face('Rubik', '../fonts/Rubik-Regular', 400);
+@include font-face('Rubik', '../fonts/Rubik-Medium', 500);
+
+@include font-face('CormorantGaramond', '../fonts/CormorantGaramond-Italic', 400, 'italic');
+@include font-face('CormorantGaramond', '../fonts/CormorantGaramond-Bold', 700);

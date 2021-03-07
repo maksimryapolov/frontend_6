@@ -1,0 +1,11 @@
+mixin mobileMenu(links = [{link: '#', title : "HOME"},{link: '#', title : "ABOUT US"},{link: '#', title : "SERVICES"},{link: '#', title : "PORTFOLIO"},{link: '#', title : "OUR TEAM"},{link: '#', title : "NEWS"},{link: '#', title : "CONTACT"}])
+    .b-mobile-menu#mobile-container
+        .burger#burger
+            .burger__item.burger__item_top
+            .burger__item.burger__item_middle
+            .burger__item.burger__item__bottom
+        .b-mobile-menu__wrapper#mobile-wrapper
+            ul.b-mobile-menu__items
+                each val in links
+                    li.b-mobile-menu__item
+                        a.b-mobile-menu__link(href=val.link)=val.title

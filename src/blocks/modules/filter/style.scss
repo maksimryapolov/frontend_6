@@ -1,0 +1,33 @@
+.filter {
+
+    &__body {
+        padding: $indent-vertical-md 0;
+    }
+
+    &__title {
+        margin-bottom: $base * 6;
+    }
+
+    &__container {
+        display: flex;
+        border-radius: 10px;
+        background: #f5f9ec;
+        justify-content: space-between;
+    }
+
+    &__col {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: $base*5 $base*6;
+        flex-grow: 1;
+
+        &:nth-child(even) {
+            flex-grow: 2;
+        }
+
+        & + & {
+            border-left: 1px solid #e3e7db;
+        }
+    }
+}
