@@ -4,14 +4,23 @@ include helpers/mixins
 block variables
 	- const title = "gulp-pug-starter"
 
-block header 
+block header
 	include ../blocks/modules/header/header.pug
 
 block content
-	//- include ./blocks/index.pug
 	include ../blocks/modules/banner/index.pug
 	include ../blocks/modules/filter/index.pug
 	include ../blocks/modules/seasonal/index.pug
+	include ../blocks/modules/hit/index.pug
+	include ../blocks/modules/discount/index.pug
+	include ../blocks/modules/roses/index.pug
+	include ../blocks/modules/section-btn/index.pug
+	include ../blocks/modules/centers/index.pug
+	include ../blocks/modules/customers/index.pug
+	include ../blocks/modules/articles/index.pug
+	include ../blocks/modules/news/index.pug
+	include ../blocks/modules/subscription/index.pug
+	include ../blocks/modules/advantages/index.pug
 
 block footer 
 	include ../blocks/modules/footer/footer.pug

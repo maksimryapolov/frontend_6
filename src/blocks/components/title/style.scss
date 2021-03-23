@@ -1,8 +1,12 @@
 h2.title {
     @include сormorant;
-    font-size: $base * 9;
+    font-size: rem(36);
 
     &_center {
         text-align: center;
+    }
+    
+    &_size-sm {
+        font-style: rem(24);
     }
 }

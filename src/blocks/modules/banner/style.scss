@@ -1,13 +1,28 @@
 .banner {
-    height: 70vh;
     position: relative;
+    height: 70vh;
 
-    &__body,
-    &__item,
-    .owl-stage-outer,
-    .owl-stage,
-    .owl-item,
-    .section-inner {
+    .owl-dot {
+        width: $base * 3;
+        height: $base * 3;
+        border: $base/2 solid $white;
+        padding: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+        &:not(:last-child) {
+            margin-right: $base * 3;
+        }
+
+        &.active {
+            background-color: $white;
+        }
+    }
+
+    &__body, &__item, .owl-stage-outer, .owl-stage, .owl-item, .section-inner {
         height: 100%;
     }
 
@@ -16,17 +31,16 @@
     }
 
     &__wrapper {
-        height: inherit;
         display: inline-flex;
         align-items: center;
-        justify-content: centers;
+        height: inherit;
     }
 
     &__block-info {
         width: 45%;
+        height: auto;
         padding: $base*8 $base*12 $base*10 $base*12;
         background: transparentize($white, .05);
-        height: auto;
     }
 
     &__text {
@@ -37,52 +51,16 @@
 
     &__link {
         text-decoration: underline;
-
-        a {
-            color: #407014; 
-            display: flex;
-            align-items: center;
-
-            &::after {
-                content: '';
-                background-image: url('../../img/svg/banner/arrow-right.svg');
-                display: inline-block;
-                width: 13px;
-                height: 13px;
-                margin-left: $base * 2;
-                margin-top: $base/2;
-            }
-        }
     }
 
     &__dots {
-        text-align: center;
+        display: flex;
         position: absolute;
+        z-index: 100;
         bottom: 0;
         left: 50%;
-        display: flex;
-        margin-bottom: $base * 5;
         transform: translateX(-50%);
-        z-index: 100;
-    }
-
-    .owl-dot {
-        width: $base * 3;
-        height: $base * 3;
-        border: $base/2 solid $white;
-        border-radius: 50%;
-        cursor: pointer;
-        outline: none;
-        background-color: transparent;
-        padding: 0;
-        box-shadow: 0 0 5px rgba(0,0,0,0.5);
-
-        &:not(:last-child) {
-            margin-right: $base * 3;
-        }
-
-        &.active {
-            background-color: $white;
-        }
+        text-align: center;
+        margin-bottom: $base * 5;
     }
 }

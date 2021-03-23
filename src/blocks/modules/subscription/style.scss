@@ -1,0 +1,80 @@
+.subscription {
+    @include cover;
+    background-image: url("../img/subscription/image_bg.png");
+
+    &__body {
+        padding-top: $base*9;
+        padding-bottom: $base*9;
+    }
+    
+    &__body, &__form {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__title {
+        padding-right: $base * 12;
+        color: $white;
+        font-size: rem(22);
+        flex-basis: 25%;
+    }
+
+    &__field {
+        flex-basis: 75%;
+        margin-right: $base * 12;
+        padding-bottom: $base * 3;
+        position: relative;
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1px solid $white;
+            color: $white;
+            padding: 0 0 $base 0;
+
+            &::-webkit-input-placeholder {
+                font-size: rem(15);
+                color: $white;
+            }
+            &:-ms-input-placeholder {
+                font-size: rem(15);
+                color: $white;
+            }
+            &::-ms-input-placeholder {
+                font-size: rem(15);
+                color: $white;
+            }
+            &::placeholder {
+                font-size: rem(15);
+                color: $white;
+            }
+        }
+    }
+
+    &__field-placeholder {
+        font-weight: $fw-light;
+        font-style: italic;
+        font-size: rem(12);
+        color: $white;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__btn {
+        flex-basis: 25%;
+
+        button {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    }
+}

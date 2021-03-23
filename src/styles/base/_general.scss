@@ -32,6 +32,7 @@ ul {
 
 a {
     @include resetLink;
+    color: inherit;
 }
 
 .section-inner {
@@ -40,4 +41,12 @@ a {
 
 .btn-df {
     @include btn-default;
+}
+
+.catalog-separator {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+a.link-arrow {
+    @include link-arrow(#407014);
 }

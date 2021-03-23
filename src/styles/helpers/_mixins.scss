@@ -44,6 +44,7 @@
     @include rubik;
     font-weight: $fw-regular;
     font-size: $base-font-size;
+    font-style: normal;
 }
 
 @mixin resetLink {
@@ -52,16 +53,33 @@
 }
 
 @mixin rubik {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 @mixin сormorant {
-    font-family: 'CormorantGaramond', sans-serif;
+    font-family: "CormorantGaramond", sans-serif;
 }
 
 @mixin btn-default {
-    padding: $base*4 $base*8;
+    display: inline-block;
     border: 1px solid #3cb950;
+    padding: $base*4 $base*8;
     border-radius: $base * 12;
     color: #4bb45e;
+}
+
+@mixin link-arrow($color) {
+    color: $color;
+    display: flex;
+    align-items: center;
+
+    &::after {
+        content: "";
+        background-image: url("../../img/svg/banner/arrow-right.svg");
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin-left: $base * 2;
+        margin-top: $base/2;
+    }
 }

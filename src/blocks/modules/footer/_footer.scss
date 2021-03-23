@@ -1,0 +1,59 @@
+.footer {
+    background: linear-gradient(90deg, rgb(50, 112, 20) 0%, rgb(64, 109, 14) 55%, rgb(9, 95, 7) 100%);
+    color: $white;
+
+    &__body {
+        display: flex;
+        padding-top: $indent-vertical-sm;
+        padding-bottom: $indent-vertical-sm;
+    }
+
+    &__info {
+        flex-basis: 30%;
+    }
+    
+    &__copyright {
+        font-size: rem(14);
+        opacity: .64;
+        margin-bottom: $base * 5;
+    }
+
+    &__numbers-wrapper {
+        display: flex;
+        margin-bottom: $base * 5;
+    }
+
+    &__numbers {
+        font-weight: $fw-light;
+        line-height: 1.2;
+    }
+
+    &__numbers-icon {
+        margin-right: $base * 3;
+    }
+
+    &__links {
+        opacity: .64;
+        font-weight: $fw-light;
+        text-decoration: underline;
+    }
+
+    &__link {
+        & + & {
+            margin-top: $base * 2;
+        }
+    }
+
+    &__menu-row {
+        display: flex;
+        flex-basis: 70%;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__menu-item {
+        & + & {
+            margin-top: $base * 3;
+        }
+    }
+}

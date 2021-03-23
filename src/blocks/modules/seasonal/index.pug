@@ -1,93 +1,150 @@
-section.seasonal
-    .seasonal__body.section-inner
-        .seasonal__title 
-            +title('Сезонное предложение')
-        .seasonal__catalog.catalog 
-            .catalog__items 
-                .catalog__item
-                    a.catalog__full-card(href="#")
-                        .catalog__favorites
-                            <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
-                            </svg>
-                        .catalog__img 
-                            img(src="../img/catalog/item_1.png", alt="")
-                            .catalog__option.catalog__option_green
-                                .catalog__option-text.catalog__option-text_seedling-icon Новинка
-                        .catalog__bottom 
-                            .catalog__price 1600 ₽
-                            .catalog__name Минибукет 1600-6
-                    .catalog__info
-                        .catalog__description Роза - 3  шт. (50 см.),#[br]Хризантема кустовая - 4 шт.,#[br]Лилия Азиатика - 1 шт.
-                        .catalog__actions 
-                            .catalog__form 
-                                button.catalog__btn-minus -
-                                input(type="number")
-                                button.catalog__btn-plus +
-                            .catalog__btn-buy
-                                a(href="#") В корзину
-                        a.catalog__buy-click Купить в один клик
-                .catalog__item
-                    a.catalog__full-card(href="#")
-                        .catalog__favorites
-                            <svg width="25" height="25" viewBox="0 0 29 25" fill="red" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
-                            </svg>
-                        .catalog__img 
-                            img(src="../img/catalog/item_2.png", alt="")
-                            .catalog__option.catalog__option_red
-                                .catalog__option-text.catalog__option-text_avard-icon Акция
-                        .catalog__bottom 
-                            .catalog__price 1600 ₽
-                            .catalog__name Минибукет 1600-6
-                .catalog__item
-                    a.catalog__full-card(href="#")
-                        .catalog__favorites
-                            <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
-                            </svg>
-                        .catalog__img 
-                            img(src="../img/catalog/item_3.png", alt="")
-                            .catalog__option.catalog__option_blue
-                                .catalog__option-text.catalog__option-text_tint-icon С водой
-                        .catalog__bottom 
-                            .catalog__price 1600 ₽
-                            .catalog__name Минибукет 1600-6
-                .catalog__item
-                    a.catalog__full-card(href="#")
-                        .catalog__favorites
-                            <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
-                            </svg>
-                        .catalog__img 
-                            img(src="../img/catalog/item_4.png", alt="")
-                            .catalog__option
-                        .catalog__bottom 
-                            .catalog__price 1600 ₽
-                            .catalog__name Минибукет 1600-6
-                .catalog__item
-                    a.catalog__full-card(href="#")
-                        .catalog__favorites
-                            <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
-                            </svg>
-                        .catalog__img 
-                            img(src="../img/catalog/item_5.png", alt="")
-                            .catalog__option
-                        .catalog__bottom 
-                            .catalog__price 1600 ₽
-                            .catalog__name Минибукет 1600-6
-                .catalog__item
-                    a.catalog__full-card(href="#")
-                        .catalog__favorites
-                            <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
-                            </svg>
-                        .catalog__img 
-                            img(src="../img/catalog/item_6.png", alt="")
-                            .catalog__option
-                        .catalog__bottom 
-                            .catalog__price 1600 ₽
-                            .catalog__name Минибукет 1600-6
-        .seasonal__btn-block 
-            a.btn-df(href="") Смотреть все
+section.catalog-section
+    .catalog-section__body.section-inner
+        .catalog-section__wrapper
+            .catalog-section__title
+                +title('Сезонное предложение')
+            .catalog-section__catalog.catalog
+                .catalog__items
+                    .catalog__item
+                        a.catalog__full-card(href="#")
+                            .catalog__favorites
+                                <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
+                                </svg>
+                            .catalog__img
+                                img(src="../img/catalog/item_1.png", alt="")
+                                .catalog__option.catalog__option_green
+                                    .catalog__option-text.catalog__option-text_seedling-icon Новинка
+                            .catalog__bottom
+                                .catalog__price 
+                                    span 1600 ₽
+                                .catalog__name Минибукет 1600-6
+                        .catalog__info
+                            .catalog__description Роза - 3  шт. (50 см.),#[br]Хризантема кустовая - 4 шт.,#[br]Лилия Азиатика - 1 шт.
+                            .catalog__actions
+                                .catalog__form
+                                    div.catalog__btn-minus -
+                                    input(type="number" value='1')
+                                    div.catalog__btn-plus +
+                                .catalog__btn-buy
+                                    a(href="#") В корзину
+                            a.catalog__buy-click(href="#") Купить в один клик
+                    .catalog__item
+                        a.catalog__full-card(href="#")
+                            .catalog__favorites
+                                <svg width="25" height="25" viewBox="0 0 29 25" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
+                                </svg>
+                            .catalog__img
+                                img(src="../img/catalog/item_2.png", alt="")
+                                .catalog__option.catalog__option_red
+                                    .catalog__option-text.catalog__option-text_avard-icon Акция
+                            .catalog__bottom
+                                .catalog__price 
+                                    span 1600 ₽
+                                .catalog__name Минибукет 1600-6
+                        .catalog__info
+                            .catalog__description Роза - 3  шт. (50 см.),#[br]Хризантема кустовая - 4 шт.,#[br]Лилия Азиатика - 1 шт.
+                            .catalog__actions
+                                .catalog__form
+                                    div.catalog__btn-minus -
+                                    input(type="number" value='1')
+                                    div.catalog__btn-plus +
+                                .catalog__btn-buy
+                                    a(href="#") В корзину
+                            a.catalog__buy-click(href="#") Купить в один клик
+                    .catalog__item
+                        a.catalog__full-card(href="#")
+                            .catalog__favorites
+                                <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
+                                </svg>
+                            .catalog__img
+                                img(src="../img/catalog/item_3.png", alt="")
+                                .catalog__option.catalog__option_blue
+                                    .catalog__option-text.catalog__option-text_tint-icon С водой
+                            .catalog__bottom
+                                .catalog__price 
+                                    span 1600 ₽
+                                .catalog__name Минибукет 1600-6
+                        .catalog__info
+                            .catalog__description Роза - 3  шт. (50 см.),#[br]Хризантема кустовая - 4 шт.,#[br]Лилия Азиатика - 1 шт.
+                            .catalog__actions
+                                .catalog__form
+                                    div.catalog__btn-minus -
+                                    input(type="number" value='1')
+                                    div.catalog__btn-plus +
+                                .catalog__btn-buy
+                                    a(href="#") В корзину
+                            a.catalog__buy-click(href="#") Купить в один клик
+                    .catalog__item
+                        a.catalog__full-card(href="#")
+                            .catalog__favorites
+                                <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
+                                </svg>
+                            .catalog__img
+                                img(src="../img/catalog/item_4.png", alt="")
+                                .catalog__option
+                            .catalog__bottom
+                                .catalog__price 
+                                    span 1600 ₽
+                                .catalog__name Минибукет 1600-6
+                        .catalog__info
+                            .catalog__description Роза - 3  шт. (50 см.),#[br]Хризантема кустовая - 4 шт.,#[br]Лилия Азиатика - 1 шт.
+                            .catalog__actions
+                                .catalog__form
+                                    div.catalog__btn-minus -
+                                    input.catalog__num-area(type="number" value='1')
+                                    div.catalog__btn-plus +
+                                .catalog__btn-buy
+                                    a(href="#") В корзину
+                            a.catalog__buy-click(href="#") Купить в один клик
+                    .catalog__item
+                        a.catalog__full-card(href="#")
+                            .catalog__favorites
+                                <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
+                                </svg>
+                            .catalog__img
+                                img(src="../img/catalog/item_5.png", alt="")
+                                .catalog__option
+                            .catalog__bottom
+                                .catalog__price 
+                                    span 1600 ₽
+                                .catalog__name Минибукет 1600-6
+                        .catalog__info
+                            .catalog__description Роза - 3  шт. (50 см.),#[br]Хризантема кустовая - 4 шт.,#[br]Лилия Азиатика - 1 шт.
+                            .catalog__actions
+                                .catalog__form
+                                    div.catalog__btn-minus -
+                                    input(type="number" value='1')
+                                    div.catalog__btn-plus +
+                                .catalog__btn-buy
+                                    a(href="#") В корзину
+                            a.catalog__buy-click(href="#") Купить в один клик
+                    .catalog__item
+                        a.catalog__full-card(href="#")
+                            .catalog__favorites
+                                <svg width="25" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.2656 1.94531C23.2578 -0.570312 18.8281 -0.1875 16.0391 2.71094L15 3.80469L13.9062 2.71094C11.6641 0.414062 7.17969 -1.00781 3.67969 1.94531C0.234375 4.89844 0.0703125 10.1484 3.13281 13.3203L13.7422 24.2578C14.0703 24.5859 14.5078 24.75 14.9453 24.75C15.4375 24.75 15.875 24.5859 16.2031 24.2578L26.8125 13.3203C29.875 10.1484 29.7109 4.89844 26.2656 1.94531ZM25.5547 12.1172L15 23.0547L4.39062 12.1172C2.3125 9.92969 1.875 5.82812 4.82812 3.3125C7.83594 0.742188 11.3359 2.60156 12.6484 3.91406L15 6.32031L17.2969 3.91406C18.5547 2.60156 22.1094 0.742188 25.1172 3.3125C28.0703 5.82812 27.6328 9.92969 25.5547 12.1172Z" fill="#FF5555"/>
+                                </svg>
+                            .catalog__img
+                                img(src="../img/catalog/item_6.png", alt="")
+                                .catalog__option
+                            .catalog__bottom
+                                .catalog__price 
+                                    span 1600 ₽
+                                .catalog__name Минибукет 1600-6
+                        .catalog__info
+                            .catalog__description Роза - 3  шт. (50 см.),#[br]Хризантема кустовая - 4 шт.,#[br]Лилия Азиатика - 1 шт.
+                            .catalog__actions
+                                .catalog__form
+                                    div.catalog__btn-minus -
+                                    input(type="number" value='1')
+                                    div.catalog__btn-plus +
+                                .catalog__btn-buy
+                                    a(href="#") В корзину
+                            a.catalog__buy-click(href="#") Купить в один клик
+            .catalog-section__btn-block
+                a.btn-df(href="#") Смотреть все

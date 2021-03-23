@@ -1,0 +1,16 @@
+.section-btn {
+    text-align: center;
+
+    &_ident {
+        margin-bottom: $indent-vertical-md;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: $base*4 $base*8;
+        color: $white;
+        background: linear-gradient(90deg, rgba(60, 185, 80, 1) 0%, rgba(19, 221, 51, 1) 100%);
+        border-radius: $base * 12;
+        text-transform: uppercase;
+    }
+}

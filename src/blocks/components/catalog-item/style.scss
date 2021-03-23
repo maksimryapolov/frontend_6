@@ -1,18 +1,3 @@
-.seasonal {
-
-    &__title {
-        margin-bottom: $base * 5;
-    }
-
-    &__catalog {
-        margin-bottom: $base * 5;
-    }
-
-    &__btn-block {
-        text-align: center;
-    }
-}
-
 .catalog {
     &__items {
         text-align: justify;
@@ -21,11 +6,10 @@
     }
 
     &__item {
-        display: flex;
+        display: inline-block;
         flex-direction: column;
         position: relative;
         text-align: center;
-        display: inline-block;
         width: calc((100% - 6 * 20px) / 3);
         padding: $base * 4;
 
@@ -44,9 +28,9 @@
     }
     
     &__img {
+        position: relative;
         width: $base * 50;
         margin: 0 auto;
-        position: relative;
 
         img {
             @include img;
@@ -54,17 +38,15 @@
     }
 
     &__option {
-        &_green,
-        &_red,
-        &_blue {
+        &_green, &_red, &_blue {
             position: absolute;
             bottom: $base * 9;
             left: 50%;
+            border: 1px solid $white;
+            padding: $base $base*5;
             transform: translateX(-50%);
             border-radius: $base * 6;
-            border: 1px solid $white;
             color: $white;
-            padding: $base $base*5;
             white-space: nowrap;
         }
 
@@ -90,20 +72,19 @@
         font-size: rem(15);
 
         &_seedling-icon {
-            background-image: url('../img/svg/catalog/seedling.svg');
+            background-image: url("../img/svg/catalog/seedling.svg");
         }
 
         &_avard-icon {
-            background-image: url('../img/svg/catalog/award.svg');
+            background-image: url("../img/svg/catalog/award.svg");
         }
 
         &_tint-icon {
-            background-image: url('../img/svg/catalog/tint.svg');
+            background-image: url("../img/svg/catalog/tint.svg");
         }
     }
 
-    &__bottom,
-    &__info {
+    &__bottom, &__info {
         text-align: center;
         -moz-text-align-last: auto;
         text-align-last: auto;
@@ -123,69 +104,101 @@
         color: #4bb45e;
     }
 
+    &__old-price {
+        font-size: rem(18);
+        color: #c0c0c0;
+        text-decoration: line-through;
+        margin-left: $base * 3;
+    }
+
     &__info {
+        display: none;
         position: absolute;
-        z-index: 5;
-        width: calc(100% - (#{$base}*4 + #{$base}*4));
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         background-color: $white;
+        padding-bottom: $base * 4;
+        //opacity: 0;
+
+        transform: translateY(100%);
+        transition: all $transition linear;
+    }
+
+    &__item:hover {
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, .1);
+    }
+
+    &__item:hover &__info {
+        // display: block;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        // z-index: 5;
+        // opacity: 1;
     }
 
     &__description {
         background-color: #4bb45e;
         color: $white;
         text-align: left;
-        padding: $base * 4
+        padding: $base * 4;
     }
 
     &__actions {
         display: flex;
-        padding: $base*5 $base*8 $base*2 $base*8;
+        padding: $base*5 $base*8 $base*4 $base*8;
     }
 
-    &__form,
-    &__btn-buy {
+    &__form, &__btn-buy {
         flex: 0 1 50%;
     }
 
     &__form {
         display: flex;
+        align-items: center;
         border: 1px solid rgba(0, 0, 0, .3);
+        font-weight: $fw-light;
 
-        input,
-        button {
+        input, button {
             outline: none;
         }
 
-        button {
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: #4bb45e;
             background-color: $white;
-            width: 32px;
-            height: 32px;
+            width: $base * 8;
+            height: $base * 8;
+            padding: 0;
+            font-size: rem(24);
+            cursor: pointer;
         }
 
         input {
-            width: 100%;
+            text-align: center;
+            width: calc(100% - #{$base} * (8 * 2));
             border: none;
+            padding: $base;
+            font-weight: $fw-light;
         }
 
-        input[type='number'] {
-            -moz-appearance:textfield;
+        input[type="number"] {
+            -moz-appearance: textfield;
         }
         
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
     }
 
-    &__form,
-    &__btn-minus {
+    &__form, &__btn-minus {
         border-top-left-radius: $base * 2;
         border-bottom-left-radius: $base * 2;
     }
 
-    &__form,
-    &__btn-plus {
+    &__form, &__btn-plus {
         border-bottom-right-radius: $base * 2;
         border-top-right-radius: $base * 2;
     }
@@ -198,5 +211,28 @@
     &__btn-plus {
         border: none;
         border-left: 1px solid rgba(0, 0, 0, .3);
+    }
+
+    &__btn-buy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4bb45e;
+        border-radius: $base + 2;
+        margin-left: $base * 5;
+
+        a {
+            color: $white;
+            display: inline-block;
+            padding: $base $base*2;
+        }
+    }
+
+    &__buy-click {
+        color: #4bb45e;
+
+        a {
+            display: block;
+        }
     }
 }

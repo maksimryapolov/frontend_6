@@ -1,0 +1,35 @@
+.centers {
+    background-color: #fff5f5;
+    padding: $indent-vertical-sm;
+
+    &__title {
+        margin-bottom: $base * 6;
+    }
+
+    &__items-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: $base*2 $base*3;
+        font-size: rem(18);
+
+        & + & {
+            margin-top: $base;
+        }
+
+        &:hover {
+            background-color: #ff5555;
+            border-radius: $base;
+
+            a {
+                color: $white;
+            }
+        }
+
+        a {
+            color: #737070;
+        }
+    }
+}

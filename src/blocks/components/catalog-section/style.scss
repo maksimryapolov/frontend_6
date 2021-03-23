@@ -1,0 +1,24 @@
+.catalog-section {
+    &__wrapper {
+        padding-bottom: $indent-vertical-md;
+    }
+
+    &__title {
+        margin-bottom: $base * 5;
+    }
+
+    &__catalog {
+        margin-bottom: $base * 5;
+    }
+
+    &__btn-block {
+        text-align: center;
+    }
+
+    & + & {
+        .catalog-section__wrapper {
+            border-top: 1px solid rgba(0, 0, 0, .3);
+            padding-top: $indent-vertical-md;
+        }
+    }
+}

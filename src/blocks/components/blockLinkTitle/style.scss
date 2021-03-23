@@ -1,0 +1,37 @@
+.blockTitleLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #444;
+
+    &_ver-top {
+        align-items: flex-start;
+    }
+
+    &__title {
+        @include сormorant;
+        font-weight: $fw-bold;
+        font-size: rem(24);
+        text-transform: uppercase;
+
+        &.tx-center {
+            text-align: center;
+        }
+
+        &_size-md {
+            font-size: rem(36);
+        }
+
+        &_pd-l {
+            padding-left: $base * 5;
+        }
+    }
+
+
+
+    &__link {
+        font-weight: $fw-light;
+        font-size: rem(14);
+        text-decoration: underline;
+    }
+}
