@@ -60,6 +60,10 @@
     font-family: "CormorantGaramond", sans-serif;
 }
 
+@mixin caribbean {
+    font-family: "Caribbean", sans-serif;
+}
+
 @mixin btn-default {
     display: inline-block;
     border: 1px solid #3cb950;

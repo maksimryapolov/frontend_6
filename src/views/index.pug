@@ -2,14 +2,14 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "gulp-pug-starter"
+	- const title = "Магазин цветов"
 
 block header
 	include ../blocks/modules/header/header.pug
 
 block content
 	include ../blocks/modules/banner/index.pug
-	include ../blocks/modules/filter/index.pug
+	include ../blocks/modules/filter/main.pug
 	include ../blocks/modules/seasonal/index.pug
 	include ../blocks/modules/hit/index.pug
 	include ../blocks/modules/discount/index.pug

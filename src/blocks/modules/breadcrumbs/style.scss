@@ -1,0 +1,27 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: rem(13);
+    margin-top: $base*5;
+
+    .breadcrumb {
+        margin-right: $base*2;
+        cursor: pointer;
+    }
+
+    .breadcrumb.current {
+        cursor: default;
+        opacity: .64;
+    }
+
+    .breadcrumb:not(:last-child) {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            margin-left: $base*2;
+            content: ">";
+            display: inline;
+        }
+    }
+}

@@ -1,11 +1,12 @@
 h2.title {
     @include сormorant;
     font-size: rem(36);
+    color: $main-color-txt;
 
     &_center {
         text-align: center;
     }
-    
+
     &_size-sm {
         font-style: rem(24);
     }

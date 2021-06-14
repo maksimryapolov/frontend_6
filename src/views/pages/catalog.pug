@@ -2,13 +2,16 @@ extends ../layouts/default
 include ../helpers/mixins
 
 block variables
-	- const title = "gulp-pug-starter"
+	- const title = "Каталог"
 
 block header 
 	include ../../blocks/modules/header/header.pug
 
 block content
-	h1 main
+	include ../../blocks/modules/breadcrumbs/index.pug
+	include ../../blocks/modules/filter/catalog-filter.pug
+	include ../../blocks/modules/catalog-info/index.pug
+
 
 block footer 
 	include ../../blocks/modules/footer/footer.pug
