@@ -10,4 +10,10 @@ h2.title {
     &_size-sm {
         font-style: rem(24);
     }
+
+    &_width-40 {
+        width: 40%;
+        margin: auto;
+        text-align: center;
+    }
 }

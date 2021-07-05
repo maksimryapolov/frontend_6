@@ -1,0 +1,13 @@
+.viewed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $base*4 0;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    margin-bottom: $indent-vertical-md;
+
+    &__text {
+        color: $main-color-txt;
+    }
+}
