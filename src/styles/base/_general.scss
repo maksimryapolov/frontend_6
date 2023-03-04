@@ -21,6 +21,21 @@ body {
     @include body;
 }
 
+.canvas {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .header,
+    .footer {
+        flex: 0 1 auto;
+    }
+
+    .content {
+        flex: 1 0 auto;
+    }
+}
+
 ul {
     margin: 0;
     padding: 0;
